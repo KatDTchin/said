@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <nav class="navbar navbar-light">
+        <div class="logo">
+            <img src="./images/download.png" alt="UMBB School Logo">
+            <h1><span>UMBB</span>-School</h1>
+        </div>
+        <div class="collapse">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link underline-animation" href="#">Benefits</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link underline-animation" href="#">Courses</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link underline-animation" href="#">Courses</a>
+              </li>
+              <li class="nav-item">
+                <a href="url_de_votre_autre_page.html" class="red-button">Aller vers une autre page</a>
+            </li>
+            </ul>
+        </div>
+    </nav>    
+  <div class="formulaire">
+    <div class="left">
+      <video autoplay muted loop>
+        <source src="istockphoto-1340087869-640_adpp_is.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="right">
+        <!-- Div de droite avec le formulaire pour ajouter un étudiant -->
+        <h1><span id="title">Posez-</span><span>recours</span>:</h1>
+        <form class="student-form" id="studentForm">
+
+            <div class="section">
+            <label for="nom">Nom:</label>
+            <input type="text" id="nom" name="nom" required>  
+            </div>
+
+            <div class="section">
+            <label for="prenom">Prénom:</label>
+            <input type="text" id="prenom" name="prenom" required>
+            </div>
+
+            <div class="section">
+              <label for="noteReel">Note:</label>
+             <input type="text" id="noteReel" name="noteReel" required> 
+             </div>
+
+             <div class="section">
+              <label for="noteReel">Note Reel:</label>
+             <input type="text" id="noteReel" name="noteReel" required> 
+             </div>
+             <div class="section">
+              <label for="nature">Nature :</label>
+              <select name="nature" id="module">
+              <option value="">...</option>
+              <option value="cc">CC</option>
+              <option value="composition">Composition</option>            
+            </select>
+            </div>
+
+            <div class="section">
+              <label for="module">Module :</label>
+              <select name="module" id="module">
+              <option value="">...</option>
+              <option value="SID">Système d'information distribué</option>
+              <option value="GL">Système d'aide à la décision</option>
+              <option value="SAD">Génie Logiciel</option>
+              <option value="IHM">Interface Homme Machine</option>   
+              <option value="PAW">Administration des Systèmes d'information</option>
+              <option value="ASI">Programmation avancée pour le Web</option>   
+              <option value="EXO">Economie numérique et veille stratégique</option>            
+            </select>
+            </div>
+
+            <div class="buttons">
+             <button type="button" onclick="ajouterEtudiant()" id="ajouterETD">Ajouter Étudiant</button>
+             <button type="button" onclick="rechercherEtudiant()" id="rechercherETD">Rechercher Étudiant<img src="icons8-search.gif" alt="Recherche" class="search-icon"></button>
+        </form>
+    </div>
+</div>
+</div>
+<footer>
+  <ul class="social-icons">
+      <li><a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a></li>
+      <li><a href="#" class="social-icon"><i class="fab fa-twitter"></i></a></li>
+      <li><a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a></li>
+      <li><a href="#" class="social-icon"><i class="fab fa-instagram"></i></a></li>
+  </ul>
+  <p>&copy; 2023 UMBB-school. All rights reserved.</p>
+</footer>
+</body>
+</html>
