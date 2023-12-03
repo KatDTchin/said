@@ -1,0 +1,132 @@
+.rectangle-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.rectangle-bg {
+    position: relative;
+    z-index: 1;
+}
+
+.white-hole {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    z-index: 2;
+}
+
+.hole1 {
+    top: -10px;
+    left: -10px;
+}
+
+.hole2 {
+    width: 60px;
+    height: 60px;
+    top: 60px;
+    left: 40px;
+}
+
+.centered-div {
+    position: relative;
+    overflow: hidden;
+    height: 300px; /* Set a fixed height or adjust as needed */
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(0);
+    transition: filter 0.3s ease;
+}
+
+.centered-div:hover .background-image {
+    filter: blur(5px);
+    transform: scale(1.2);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the overlay color and opacity as needed */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff; /* Set text color */
+    text-align: center;
+}
+
+.btn-outline-custom {
+    color: #fff; /* Set button text color */
+    border-color: #fff; /* Set button border color */
+}
+
+.carousel-inner {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.card {
+    width: 18rem; /* Set your desired card width */
+    margin-right: 10px; /* Adjust spacing between cards as needed */
+}
+
+.carousel-control-prev, .carousel-control-next {
+    width: auto;
+    font-size: 2rem;
+    color: #000;
+    background: none;
+    border: none;
+}
+
+.right {
+    background-image: url(./images/universityland.jpg);
+    background-position: center;
+    background-size: cover;
+    flex: 1;
+    padding: 20px;
+    border-radius: 0px 25px 25px 0px;
+    border: 5px solid #0056b3; /* Ajoute une bordure de 10 pixels de couleur secondaire autour de la div */
+    border-left: 0; /* Pas de bordure à gauche */
+  }
+
+
+  .Etudients {
+      height: 100%; /* Définissez la hauteur fixe que vous souhaitez */
+      width:  100%;
+  }
+
+  @media (min-width: 1920px) {
+    
+   
+    .right{
+        width: 100%;
+    }
+
+}
+    @media (max-width:770px) {
+        main-container{
+            margin: 10px;
+        }
+        .right {
+            height: 88%;
+            padding: 20px;
+            border-radius: 25px 25px 25px 25px;
+            border: 5px solid #0056b3; /* Ajoute une bordure de 10 pixels de couleur secondaire autour de la div */
+
+        }
+  }
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f1f1f1; /* Ajoutez la couleur de fond que vous souhaitez */
+}
